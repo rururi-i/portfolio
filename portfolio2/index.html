@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="common/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>架空の台湾観光案内サイト</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+    </head>
+    <body>
+
+      <!-- ↓右スライド　はんばーがーめにゅー↓ -->
+
+      <div id="wrap">
+        <section>
+          <button type="button" id="hamburger">
+            <span class="iconBar"></span>
+            <span class="iconBar"></span>
+            <span class="iconBar"></span>
+            <div class="iconBg"></div>
+          </button>
+
+        </section>
+        
+      </div><!-- wrap -->
+
+      <script>
+        (function () {
+    const $body = document.querySelector('body');
+    const $hamburger = document.getElementById('hamburger');
+
+    $hamburger.addEventListener('click', function(){
+      $hamburger.classList.toggle('active')
+    });
+
+    $hamburger.addEventListener('click', navToggle);
+
+    function navToggle() {
+      if ($body.classList.contains('drawerOpened')) {
+        closeFunc();
+      } else {
+        openFunc();
+      }
+    }
+    function openFunc() {
+      $body.classList.add('drawerOpened');
+    }
+    function closeFunc() {
+      $body.classList.remove('drawerOpened');
+    }
+  })();
+      </script>
+
+
+
+
+        <div class="container">
+            <header>
+              <div class="headeLogo">
+                <img src="images/headeLogo.svg" alt="ヘッダーロゴ" />
+              </div>
+              <nav class="gMenu">
+                <input class="menuBtn" type="checkbox" id="menuBtn">
+                <label class="menuIcon" for="menuBtn">
+                  <span class="navIcon"></span>
+                </label>
+                <ul class="menu">
+                  <div class="menuMenu">
+                    <img src="images/headeLogo.svg" alt="">
+                    <li>Menu</li>
+                  </div>
+                  <li><a href="index.html">Top</a></li>
+                  <li><a href="taipei/index.html">台北</a></li>
+                  <li><a href="tainan/index.html">台南</a></li>
+                  <li><a href="taichu/index.html">台中</a></li>
+                  <li><a href="#">当サイトのポリシー</a></li>
+                  <li><a href="#">お問い合わせ</a></li>
+                </ul>
+              </nav>
+            </header>
+          </div>
+          <main>
+          <div class="mainVisual">
+            <img
+              class="mainLogo"
+              src="images/topLogo.png"
+              alt="メインビジュアルロゴ"
+            />
+      
+            <div class="container">
+              <nav>
+                <ul class="menuIcon">
+                  <li>
+                    <a href="#"><img src="images/Facebook.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/Instagram.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/Twitter.svg" alt="" /></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        
+            <!-- 紹介 -->
+            <div class="syoukai">
+                <ul>
+                    <li>
+                        <div class="kokki"><img src="images/kokki.png" alt=""></div>
+                
+                        <h1>Formosa
+                        <br><span>フォルモサ （麗しの島）</span>
+                    </li>
+                    <li>
+                        <div class="Ue1"><img src="images/syoukai1.png" alt=""></div>
+                    </li>
+               
+                
+                </ul>
+                
+                
+            </div>
+            <div class="syoukaiHikei">
+                <h5>フォルモサは、十六世紀にポルトガル人がエメラルド色の美しい台湾を見つけて発した賛嘆の言葉です。緑にあふれた台湾の美しい風景が、あなたを桃源郷の世界へといざなってくれるでしょう。</h5>  
+                <div class="Ue2"><img src="images/syoukai2.png" alt=""></div>
+                
+            </div>
+                
+                
+            
+            <!-- ギャラリー -->
+            <div class="gallery">
+              <h1>Gallery<span>ギャラリー</span></h1> 
+            </div>
+             
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+              <!-- Slides -->
+       
+              <div class="swiper-slide"><img src="images/suraida1.png" alt=""></div>
+              <div class="swiper-slide"><img src="images/suraida2.png" alt=""></div>
+              <div class="swiper-slide"><img src="images/suraida3.png" alt=""></div>
+              <div class="swiper-slide"><img src="images/suraida4.png" alt=""></div>
+              <div class="swiper-slide"><img src="images/suraida5.png" alt=""></div>
+              ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+    
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+    
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+
+  
+  slidesPerView: 1,// ページネーションが必要なら追加*/
+  pagination: {
+    el: ".swiper-pagination"
+  },
+
+  // ナビボタンが必要なら追加
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    }
+  }
+});
+
+  </script>
+
+            　
+            <!-- スポット -->
+            <div id="supottoContainer" class="supottoContainer">
+                <h1>Travel<span>おすすめスポット</span></h1>
+
+
+                <div class="supottoFlex">
+                    <ul>
+                        <li><h5>訪れた人々を魅了する「美麗島」台湾。そんな台湾の人気スポットを代表する地を３つのエリアでご紹介。様々な風景に誰もが魅了されます。</h5></li>
+                        <li>
+                            <img class="map"   src="images/map.png" alt="">
+                        </li>
+                    </ul>
+                
+                </div>
+                 
+                
+                
+           </div>
+           
+           
+            <!-- イベント -->
+             <div class="event">
+                <h1>Event<span>おすすめイベント</span></h1>
+                
+                <div class="rantan">
+                    <h3>台湾ランタンフェスティバル</h3>
+                    <ul>
+                        <li>  
+                        <div class="eventImg1">
+                            <img src="images/rantan.png" alt="">
+                        </div>
+                        </li>
+                        <li>
+                            <span>開催期間</span>
+                            
+                            <br>春節　旧暦元日（2024年2月24日～3月2日予定）
+                            <div class="setumei">
+                                <br>春節の風習として「天燈」と呼ばれる紙製のランタンに無病息災などの祈りを書き込み、火種を用いて熱気球と同じ原理で空に飛ばす儀式。吉祥や邪気払いの意味があります。
+                            </div>
+                        </li>
+                    </ul>
+                   
+                </div>
+                <div class="kaunto">
+                    <h3>
+                        台北最High新年城
+                    　 <br>カウントダウンパーティー
+                    </h3>
+                    <ul>
+                        <li>
+                            <div class="eventImg2">
+                                <img src="images/kaunto.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <span>開催期間</span>
+                            <br>12月31日～1月1日
+                            <div class="setumei">
+                                <br>台北101では毎年、新年を祝う花火を実施。元旦0時から約3分間、台北101を覆い尽くすように、ビル全体から美しい火花が舞い散ります。世界中から注目されるイベントの一つです。
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+             </div>
+            <!-- 基本情報 -->
+            <div class="kihon"> 
+                <h4>台湾基本情報</h4>
+                        <div class="kihonList1">
+                            <ul>
+                                 <li>■正式名称：中華民国・台湾</li>
+                                 <li>■首都：台北</li>
+                                 <li>■人口：約2,300万人</li>
+                                 <li>■面積：約3万6,000km²</li>
+                                 <li>■人種・民族：漢民族、先住民</li>
+                                 <li>■宗教：仏教、道教、キリスト教、その他</li>
+                                 <li>■言語：北京語、台湾語</li>
+                                 <li>■通貨：元（ニュー台湾ドル）</li>
+                                <li>■時差：1時間 台湾が正午のとき、日本は午後1時</li>
+                            
+                            </ul>
+                      
+                            <ul>
+                                <li>■台湾の気候・服装</li>
+                                <li>■亜熱帯に属し一年を通して温暖な台湾。しかし北回帰線から南は熱帯で暑く、北部は大陸性気候の影響を受けて冷え込むこともあるなど、地域差を頭に入れて服装の準備を</li>
+                                <li>■台湾の祝祭日</li>
+                                <li>■正月：1月1日</li>
+                                <li>■端午節※：6月22日 ■春節※：1月20日～29日</li>
+                                <li>■中秋節※：9月29日 ■和平記念日：2月28日</li>
+                                <li>■国慶節：10月10日 ■清明節：4月5日</li>
+                            </ul>
+                        </div>
+
+
+                
+            </div>
+
+
+        </main>
+        <footer>
+        <div class="footerWaku">
+            <div class="footeKokki">
+              <img src="images/kokki.png" alt="">
+            </div>
+            <div class="footerFlex">
+              <nav class="footerMenu">
+                <label class="menuIcon" for="menuBtn">
+                  <span class="navIcon"></span>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Topへもどる</a></li>
+                    <li><a href="taipei/index.html">台北</a></li>
+                    <li><a href="tainan/index.html">台南</a></li>
+                    <li><a href="taichu/index.html">台中</a></li>
+                    <li><a href="#">当サイトのポリシー</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+              </nav>
+              <div class="gazoumatome">
+                <div class="footeLogo">
+                  <img src="images/headeLogo.svg" alt="">
+                </div>
+                <div class="footerIconWrapper">
+                  <ul class="footerIcon">
+                    <li><a href="#"><img src="images/Facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/Instagram.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/Twitter.svg" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="sen">
+              <p>Copyright (C) 2023 TAIWAN.traveler.cc</p>
+            </div>
+            
+            
+        </div>
+       
+        </footer>
+
+
+
+        <!-- ローディング画面 -->
+<div class="loading">
+  <p class="loadingText"><img class="loadingText" src="images/headeLogo.svg" alt=""></p>
+  <div class="spinner"></div>
+</div>
+
+<script>
+  //ローディング画面を取得
+const loading = document.querySelector(".loading");
+
+//ページの読み込み完了時に処理を実行
+window.addEventListener("load", () => {
+  //3秒後にローディング画面を非表示にする
+  setTimeout(() => {
+    loading.classList.add("loaded");
+  }, 3000);
+});
+</script>
+    </body>
+</html>

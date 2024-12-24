@@ -1,0 +1,955 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+body {
+    font-family: 'Zen Maru Gothic';
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #000;
+    background-color: #f4f4f4;
+}
+
+
+h1 {
+    font-size: 3.2vw;
+}
+h2 {
+    font-size: 2.5vw;
+}
+h3 {
+    font-size: 2.5vw;
+}
+h4 {
+    font-size: 2.8vw;
+}
+html {
+    font-size: 14px;
+  }
+  
+  
+  .container {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  
+  /* header */
+  .gMenu .menuBtn{
+    display: none;
+    
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    color: #fff;
+    z-index: 101;
+    position: relative;
+    bottom: 3vw;
+  }
+  .menu .menuMenu {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+    font-size: 1.7rem;
+    font-family: "Zen Kaku Gothic New";
+    font-weight: bold;
+  
+  }
+  
+  
+  
+  .headeLogo img {
+    display: block;
+  }
+  
+  .logo img {
+    display: block;
+  }
+  
+  /* main visual */
+  .mainVisual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url("../images/topPC.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 768px;
+  
+    /* 中央寄せのため */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mainLogo {
+    display: block;
+    width: 700px;
+  }
+  
+  .mainVisual .container {
+    position: relative;
+  }
+  
+  .mainVisual nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .mainVisual nav ul li {
+    margin-bottom: 40px;
+  }
+  
+
+/* 紹介 */
+.syoukai {
+    background-image: url(../images/syoukaiHaikei1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 458px;
+    margin-top: 643px;
+    
+}
+.syoukai ul {
+    display: flex;
+}
+
+.syoukaiHikei {
+    background-image: url(../images/syoukaiHaikei2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 458px;
+    margin-top: 0px;
+    position: absolute;
+    display: flex;
+    
+}
+
+.syoukai h1 {
+    display: block;
+    margin-left: 10vw;
+    margin-top: 8vw;
+    
+}
+.syoukai h1 span{
+    font-size: 2.5vw;
+    border-bottom: 1px solid #000;
+    width: 200px;
+}
+.syoukaiHikei h5 {
+    display: block;
+    width: 32vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
+   
+}
+.syoukaiHikei h5::before,
+.syoukaiHikei h5::after {
+    display: block;
+    content: "";
+    height: .5px;
+    background-color: #000;
+   margin: 50px 0;
+}
+.Ue1 img {
+    display: block;
+    width: 45vw;
+    margin-left: 8vw;
+    margin-top: 10vw;
+    
+}
+.Ue2 img {
+    display: block;
+    width: 45vw;
+    margin-left: 4vw;
+    margin-top: 8vw;
+    
+   
+   
+}
+.kokki {
+    display: block;
+    width: 10vw;
+    margin-left: 20vw;
+    margin-top: 5vw;
+    
+
+}
+/* ギャラリー */
+.swiper {
+    width: 100vw;
+    height: calc(100vw * 0.47);
+  }
+  .swiper-slide {
+    text-align: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 90%;
+  }
+
+  .swiper-pagination-bullets {
+    width: 100px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 0 0 10px !important;
+    background: #fff;
+  }
+  
+  .swiper-pagination-bullet:first-child {
+    margin: 0 !important;
+  }
+
+
+.gallery h1 {
+    display: block;
+    margin-top: 500px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    background: url(../images/pcMidasi.png);
+    background-size: 530px;
+    width: 530px;
+    height: 96px;
+    text-align: center;
+    align-content: center;
+    
+
+}
+
+.gallery h1 span {
+    font-size: 25px;
+    padding-left: 10px;
+}
+/* スポット */
+.travelImg {
+    position: relative;
+    height: 860px;
+    width: 560px;
+}
+.map {
+    margin-left: 200px;
+    width: 400px;
+}
+.supottoContainer h1 {
+    display: block;
+    background: url(../images/pcMidasi.png);
+    background-size: 530px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+    width: 530px;
+    height: 96px;
+    text-align: center;
+    align-content: center;
+}
+.supottoContainer h1 span {
+    font-size: 25px;
+    padding-left: 10px;
+}
+.supottoContainer h5 {
+    display: block;
+    width: 32vw;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.supottoContainer h5::before,
+.supottoContainer h5::after {
+    display: block;
+    content: "";
+    height: .5px;
+    background-color: #000;
+    margin: 50px 0;
+}
+.supottoFlex ul {
+    display: flex;
+}
+
+.supottoFlex::after {
+    display: block;
+    content: "";
+    height: .5px;
+    background-color: #000;
+   margin: 100px auto;
+   width: 400px;
+}
+
+/* イベント */
+.event {
+    font-family: "Zen Kaku Gothic New";
+    margin-top: 50px;
+}
+
+.rantan ul {
+    display: flex;
+}
+.eventImg1 img{
+    display: block;
+    width: 35vw;
+    
+}
+.eventImg2 img{
+    display: block;
+    width: 35vw;
+
+}
+
+.event h1 span{
+    font-size: 25px;
+    padding-left: 10px;
+}
+.event h1 {
+    display: block;
+    margin-top: 0px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    background: url(../images/pcMidasi.png);
+    background-size: 530px;
+    width: 530px;
+    height: 96px;
+    text-align: center;
+    align-content: center;
+
+}
+.event .rantan h3 {
+    display: block;
+    margin-left: 150px;
+
+
+}
+.kaunto ul {
+    display: flex;
+}
+.event .kaunto h3 {
+    display: block;
+    margin-left: 150px;
+    margin-top: 50px;
+    
+}
+.rantan ul li {
+    display: block;
+    width: 32vw; 
+    margin-left: 150px;
+    margin-top: 30px;  
+}
+.kaunto ul li {
+    display: block;
+    width: 32vw;  
+    margin-left: 150px;
+    margin-top: 30px; 
+}
+.setumei::before,
+.setumei::after {
+    display: block;
+    content: "";
+    height: .5px;
+    background-color: #000;
+   margin: 20px 0;
+}
+.event ul li span {
+    display: block;
+    font-weight: bold;
+    
+}
+.event ul li {
+    text-align: center;
+}
+.setumei {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+}
+/* 基本情報 */
+.kihon {
+    font-family: "Zen Kaku Gothic New"; 
+}
+.kihonList1 {
+    display: block;
+    justify-content: center;
+    
+   
+}
+.kihonList1 ul {
+    width: 470px;
+    margin-right: 50px;
+
+}
+.kihonList1 ul li {
+    margin-top: 10px;
+}
+h4 {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.kihon {
+    border: solid 1px #000000;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 70px;
+    padding: 50px;
+}
+.kihonList1 {
+    display: flex;
+    padding-left: 20px;
+}
+/* footer */
+footer .menu {
+    font-family: "Zen Kaku Gothic New";
+  }
+  footer .menu {
+    margin-top: 7vw;
+  }
+  footer .menu li {
+    border-bottom: solid 1px #fff;
+    width: 25vw;
+    margin-top: 20px;
+  }
+  
+  footer {
+    margin-top: 100px;
+    background-color: #007ab7;
+    color: #fff;
+  }
+  
+  .footerFlex {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .footerMenu {
+    flex-grow: 1;
+  }
+  
+  .gazoumatome {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+  }
+  
+  .gazoumatome .footeLogo {
+    flex: 1;
+    text-align: center;
+    align-content: end;
+  }
+  
+  .gazoumatome .footeLogo img {
+    display: inline;
+    margin: 0;
+  }
+  
+  .gazoumatome .footerIconWrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  .gazoumatome .footerIcon {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+  }
+  
+  .gazoumatome .footerIcon li {
+    align-content: end;
+    width: 33%;
+    text-align: center;
+  }
+  
+  .footeKokki img {
+    display: block;
+    width: 5vw;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .footeLogo img {
+    display: block;
+    width: 20vw;
+    margin-top: 100px;
+  }
+  .sen {
+    font-size: 12px;
+    width: 100vw;
+    text-align: center;
+    border-top: 1px solid #03a9f4;
+    padding: 20px 0;
+    color: #fff;
+    background: #007ab7;
+    margin-top: 20px;
+  }
+
+/* ローディング画面 */
+  .loading {
+    /*ローディング画面の縦横幅を画面いっぱいになるように指定*/
+    width: 100vw;
+    height: 100vh;
+    /*ローディング画面の表示位置を固定*/
+    position: fixed;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    background: #007AB7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*ローディング画面を0.5秒かけて非表示にする*/
+    transition: all 0.5s linear;
+  }
+  
+  /*ローディング画面を非表示にする*/
+  .loading.loaded {
+    /*0.5秒かけてopacityを0にする*/
+    opacity: 0;
+    visibility: hidden;
+  }
+  .spinner {
+    /* アニメーションを1秒かけて実行 */
+    animation: spinner-rotation 1s linear infinite;
+  }
+
+/* ロゴアニメーション */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .loadingText img {
+    animation: fadeIn 3s;
+    opacity: 0;
+    width: 50vw;
+    margin-bottom: 30px;
+  }
+  
+
+
+/* レスポンシブ */
+@media screen and (max-width:768px) {
+
+/* ローディング画面 */
+.loadingText img{
+    width: 80vw;
+    margin-bottom: 30px;
+
+    
+}
+/* header */  
+/* ↓右スライド　はんばーがーめにゅー↓ */
+
+#contents{
+    width: 100%;
+    height: 100vh;
+    background: #F6F1D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 400ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+  }
+  #hamburger {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    z-index: 300;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    width: 3rem;
+    height: 2.8rem;
+    border: none;
+    
+  & .iconBar{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background: #fff;
+      transition: all 400ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+      z-index: 400;
+      &:nth-child(1) {
+        top: 0;
+      }
+    &:nth-child(2) {
+        top: 20px;
+    }
+    &:nth-child(3) {
+        bottom: 0;
+    }
+  }
+  &.active{
+    & .iconBar{
+        background: #000;
+        &:nth-child(1) {
+            background: #fff;
+            transform: translateY(20px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            background: #fff;
+            transform: translateY(-20px) rotate(45deg);
+          }
+      }
+  }
+  }
+  #hamburger .iconBg {
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 50%;
+    background: #0000009a;
+    top: -10px;
+    left: -10px;
+    z-index: 390;
+  }
+  .menu .menuMenu {
+    display: block;
+    position: absolute;
+    top: 10px;
+  }
+  .gMenu .menu {
+    position: fixed;
+    display: block;
+    text-align: center;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    padding-top: 10rem;
+    background: #000000d3;
+    transition: all 400ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    & ul{
+        & li a{
+            font-size: 2.5rem;
+            line-height: 3rem;
+            letter-spacing: .85rem;
+            color:#fff;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+  }
+  .drawerOpened{
+    & .menu{
+        right: 0;
+    }
+    & #contents{
+        transform: translateX(-150px);
+    }
+  }
+
+
+
+
+header nav ul li {
+  margin-top: 5vw;
+  width:  fit-content;
+  border-bottom: 1px solid #fff;
+  margin: 5vw auto 0 auto;
+}
+header nav ul .menuMenu li{
+  border-bottom: 0px  #ffffff00;
+  margin-left: 19vw;
+ 
+ 
+}
+.headeLogo{
+    display: none;
+}
+  /* main visual */
+.mainVisual {
+    background-image: url("../images/topSp.png");
+}
+.mainLogo {
+    width: 80vw;
+}
+  /* 紹介 */
+
+.syoukai ul {
+    display: block;
+}
+
+.syoukaiHikei {
+    display: block;
+    
+}
+
+.syoukai h1 {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    
+}
+
+.syoukaiHikei h5 {
+   width: 50vw; 
+   margin-left: 25vw; 
+   font-size: 12px;
+}
+.syoukaiHikei h5::before,
+.syoukaiHikei h5::after {
+    height: .3px;
+   margin: 20px 0;
+}
+.Ue1 img {
+    width: 80vw;
+    margin-left: 10vw;
+   
+    
+}
+.Ue2 img {
+    width: 80vw;
+    margin-left: 10vw;
+}
+.kokki {
+    padding-top: 7vw;
+    margin-left: 45vw;
+    margin-bottom: 5vw;   
+}
+.kokki img {
+    width: 10vw;
+}
+/* ギャラリー */
+.swiper {
+  height: calc(100vw * 0.79);
+}
+.swiper-slide img {
+  width:  50vw;
+  margin: 0 auto;
+}
+.gallery h1 {
+    width: 60vw;
+    margin-left: 20vw;
+    font-size: 6vw;
+    background-size: 60vw;
+    height: calc(60vw * 0.18);
+
+}
+.gallery h1 span {
+    font-size: 3.3vw;
+    
+    
+}
+.gallery img {
+  display: block;
+  width: 50vw;
+  position: static;
+  margin-bottom: 50px;
+
+  
+}
+
+/* スポット */
+
+
+.supottoImg img{
+    display: block;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 40px;
+    
+}
+.supottoContainer h1 {
+    width: 60vw;
+    margin-left: 20vw;
+    font-size: 6vw;
+    background-size: 60vw;
+    height: calc(60vw * 0.18);
+}
+.supottoContainer h1 span {
+   padding-left: 0px;
+   font-size: 3.3vw;
+}
+
+.supottoContainer h5 {
+   margin-left: 20vw;
+   margin-top: 0;
+   width: 60vw;
+   font-size: 12px;
+    
+}
+.supottoContainer h5::before,
+.supottoContainer h5::after {
+    display: block;
+    content: "";
+    height: .5px;
+    background-color: #000;
+    margin: 30px 0;
+}
+.supottoFlex ul {
+    display: block;
+}
+.map {
+    margin-left: 10vw;
+    width: 80vw;
+}
+.supottoFlex::after {
+  width: 50vw;
+}
+/* イベント */
+
+.eventImg img{
+   
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 40px;
+    
+}
+.rantan ul {
+    display: block;
+    margin: 0 auto;
+}
+.eventImg1 img{
+    width: 100%;
+
+    
+}
+.eventImg2 img{
+    width: 100%;
+
+}
+
+.event h1 span{
+    font-size: 3.3vw;
+    padding-left: 10px;
+}
+.event h1 {
+    width: 60vw;
+    margin-left: 20vw;
+    font-size: 6vw;
+    background-size: 60vw;
+    height: calc(60vw * 0.18);
+}
+.event .rantan h3 {
+    display: block;
+   margin-left: 20vw;
+    font-size: 20px;
+
+
+}
+.kaunto ul {
+    display: block;
+}
+.event .kaunto h3 {
+    display: block;
+   margin-left: 20vw;
+    font-size: 20px;
+}
+.rantan ul li {
+    display: block;
+    width: 80vw; 
+    font-size: 12px;
+    margin-left: 10vw;
+     
+}
+.kaunto ul li {
+    display: block;
+    width: 80vw; 
+    font-size: 12px; 
+    margin-left: 10vw;
+  
+}
+.setumei::before,
+.setumei::after {
+    display: block;
+    content: "";
+    height: .5px;
+    background-color: #000;
+   margin: 20px 0;
+}
+.event ul li span {
+    display: block;
+    font-weight: bold;
+    
+}
+.event ul li {
+    text-align: center;
+}
+.setumei {
+    text-align: left;
+}
+/* 基本情報 */
+.kihon {
+    padding: 10px;
+}
+
+
+.kihonList1 {
+    display: block;
+    font-size: 12px;
+   
+}
+.kihonList1 ul li {
+    width: 70vw;
+    margin-left: 0;
+}
+
+/* footer */
+
+.footerFlex {
+    display: block;
+}
+.footeKokki img{
+    width: 15vw;
+}
+footer .menu {
+    margin-left: 25vw;
+    
+}
+
+footer .menu li {
+    width: 45vw;  
+    font-size: 12px;
+    margin-left: 0;
+    
+}
+.footeLogo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.footerIcon {
+    margin-top: 0vw;
+}
+.gazoumatome {
+    position: relative;
+    margin-top: 20px;
+    height: calc(20vw * 0.4);
+}
+.footerIconWrapper {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    top: calc(50% - 16px);
+}
+
+.sen {
+    width: 100vw;
+}
+}
